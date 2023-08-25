@@ -40,7 +40,7 @@ function App() {
   ]);
 
   const handleLike = (card) => {
-    console.log(card);
+    setFavorite((prev) => [...prev, card]);
   };
 
   return (
