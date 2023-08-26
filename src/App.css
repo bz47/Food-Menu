@@ -1,9 +1,13 @@
+body {
+  background-color: rgb(64, 61, 61);
+  color: silver;
+}
+
 #root {
   width: 80vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: solid red 2px;
 }
 
 #app {
@@ -17,20 +21,39 @@
   position: relative;
 }
 
-#favorites,
 #menu {
-  border: solid purple 3px;
+  border: solid grey 3px;
   width: 100%;
-  min-height: 20px;
   padding: 2em;
   margin: 1em;
 }
-#favorites h3,
 #menu h3 {
   text-align: left;
 }
-#favorites .col,
 #menu .col {
+  width: 100%;
+}
+
+.holder {
+  width: 100%;
+  border: solid darkgrey 3px;
+}
+.holder h3 {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+  padding-bottom: 0px;
+}
+
+#favorites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  margin: 1em;
+}
+#favorites .col {
   width: 100%;
 }
 
@@ -42,15 +65,11 @@
 .card img {
   height: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .row {
   flex-wrap: wrap;
-}
-
-.col-sm-12 {
-  border: solid teal 2px;
 }
 
 @media only screen and (max-width: 570px) {
@@ -73,4 +92,4 @@
     border: solid red 3px;
     margin-left: 20%;
   }
-} /*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

@@ -3,12 +3,17 @@ export function Cards({ array, handleLike }) {
     <>
       {array.map((i) => (
         <div className="col col-md mb-3 mb-sm-0" key={i.id}>
-          <div className="card">
-            <img src={i.image} alt="" className="card-img-top " />
-            <div className="card-body">
+          <div className="card border-secondary border-2 ">
+            <img
+              src={i.image}
+              alt=""
+              className="card-img-top"
+              style={{ objectFit: "cover" }}
+            />
+            <div className="card-body" style={{ backgroundColor: "lightgrey" }}>
               <h5 className="card-title">{i.name}</h5>
               <p className="card-text">{i.text}</p>
-              <a onClick={handleLike} href="#" className="btn btn-primary">
+              <a onClick={() => handleLike(i)} className="btn btn-primary">
                 Add to Favorites
               </a>
             </div>
