@@ -19,7 +19,7 @@ function App() {
     {
       text: "Check 123",
       name: "Lahmacun",
-      image: "../public/lahmacun.jpeg",
+      image: "src/lahmacun.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
