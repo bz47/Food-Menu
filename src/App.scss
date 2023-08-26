@@ -99,3 +99,15 @@ body {
     margin-left: 20%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #favorites {
+    max-height: 30vh;
+    overflow: scroll;
+  }
+
+  #menu {
+    height: 50vh;
+    overflow: scroll;
+  }
+}
