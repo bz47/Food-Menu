@@ -19,7 +19,7 @@ function App() {
     {
       text: "Check 123",
       name: "Lahmacun",
-      image: "src/lahmacun.jpeg",
+      image: "../public/lahmacun.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
@@ -82,14 +82,14 @@ function App() {
     {
       text: "Check 012",
       name: "Jerk Chicken",
-      image: "./src/jerk.jpg",
+      image: "src/jerk.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
       text: "Check 012",
       name: "Flaky Biscuits",
-      image: "/src/biscuit.jpg",
+      image: "src/biscuit.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
