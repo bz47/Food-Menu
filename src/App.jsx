@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   const [favorite, setFavorite] = useState(() => {
     const localValue = localStorage.getItem("ITEMS");
     if (localValue == null) return [];
@@ -119,6 +121,8 @@ function App() {
     setFavorite(favorite.filter((item) => item.id !== id));
   };
 
+  console.log(searchQuery);
+
   return (
     <div id="app">
       <h1>Recipes To Try</h1>
@@ -131,7 +135,7 @@ function App() {
           </div>
           <div className="col-md-7 col-5">
             <input
-              //onChange={filterRecipes}
+              onChange={(e) => setSearchQuery(e.target.value)}
               type="text"
               className="form-control"
               id="searchBar"
@@ -145,8 +149,12 @@ function App() {
           </div>
         </div>
       </form>
-      <Favorites favorite={favorite} handleUnlike={handleUnlike} />
-      <Menu array={array} handleLike={handleLike} />
+      <Favorites
+        favorite={favorite}
+        handleUnlike={handleUnlike}
+        searchQuery={searchQuery}
+      />
+      <Menu array={array} handleLike={handleLike} searchQuery={searchQuery} />
     </div>
   );
 }

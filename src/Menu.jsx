@@ -1,6 +1,6 @@
 import { Cards } from "./Cards";
 
-export function Menu({ array, handleLike }) {
+export function Menu({ array, handleLike, searchQuery }) {
   return (
     <div id="menu">
       <div className="row">
@@ -9,7 +9,11 @@ export function Menu({ array, handleLike }) {
         </div>
       </div>
       <div className="row">
-        <Cards array={array} handleLike={handleLike} />
+        <Cards
+          array={array}
+          handleLike={handleLike}
+          searchQuery={searchQuery}
+        />
       </div>
     </div>
   );
