@@ -135,7 +135,7 @@ function App() {
           </div>
           <div className="col-md-7 col-5">
             <input
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => setSearchQuery(e.target.value.toLowerCase())}
               type="text"
               className="form-control"
               id="searchBar"
