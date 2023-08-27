@@ -26,14 +26,14 @@ function App() {
     {
       text: "Check 456",
       name: "Chicken",
-      image: "/chicken.webp",
+      image: "/chicken.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
       text: "Check 789",
       name: "Veggies",
-      image: "/vegan.jpeg",
+      image: "/veggies.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
