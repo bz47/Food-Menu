@@ -5,8 +5,9 @@ export function Cards({ array, handleLike }) {
         <div className="col col-md mb-3 mb-sm-0" key={i.id}>
           <div className="card border-secondary border-2 ">
             <img
+              loading="lazy"
               src={i.image}
-              alt=""
+              alt={i.name}
               className="card-img-top"
               style={{ objectFit: "cover" }}
             />
