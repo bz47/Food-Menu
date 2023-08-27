@@ -19,91 +19,91 @@ function App() {
 
   const [array, setArray] = useState([
     {
-      text: "Check 123",
+      text: "Turkish Pizza",
       name: "Lahmacun",
       image: "/lahmacun.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 456",
+      text: "Fried Heaven",
       name: "Chicken",
       image: "/chicken.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 789",
+      text: "Rainbow Bow",
       name: "Veggies",
       image: "/veggies.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Pho real Pho",
       name: "Pho",
       image: "/pho.jpeg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "A la carte",
       name: "Tacos",
       image: "/tacos.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Baba who?",
       name: "Babaganoush",
       image: "/ganoush.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Spicy Delight",
       name: "Szechuan Chicken",
       image: "/szechuan.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Eww so tasty",
       name: "Stinky Tofu",
       image: "/tofu.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Southern Style",
       name: "BBQ Pork",
       image: "/bbq.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Jamaican Spice",
       name: "Jerk Chicken",
       image: "/jerk.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Grandma's Recipe",
       name: "Flaky Biscuits",
       image: "/biscuit.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "German Pie ",
       name: "Apple Strudel",
       image: "/strudel.jpg",
       id: self.crypto.randomUUID(),
       liked: false,
     },
     {
-      text: "Check 012",
+      text: "Tiger's Milk",
       name: "Ceviche",
       image: "/ceviche.jpg",
       id: self.crypto.randomUUID(),
@@ -120,8 +120,6 @@ function App() {
   const handleUnlike = (id) => {
     setFavorite(favorite.filter((item) => item.id !== id));
   };
-
-  console.log(searchQuery);
 
   return (
     <div id="app">
